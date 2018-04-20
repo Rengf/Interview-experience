@@ -52,7 +52,7 @@ CSS代码：<br/>
         }<br/>
 body里的代码：<br/>
 
-<div id="div-middle"><br/>
+<div id="gmiddle"><br/>
     <div id="div-wrap"><span>div-middle</span></div><br/>
 </div><br/>
 
