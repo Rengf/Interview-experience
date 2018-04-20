@@ -49,13 +49,9 @@ CSS代码：<br/>
 
 #div-wrap{<br/>
             margin: 0 200px 0 150px;<br/>
-        }<br/>
-body里的代码：<br/>
-<div id="gmiddle"><br/>
-    <div id="div-wrap"><br/>
-                <span>div-middle</span><br/>
-            </div><br/>
-</div><br/>
+        }<br/>
+在div-middle中再加一个div-warp就行：<br/>
+
 
 
 
