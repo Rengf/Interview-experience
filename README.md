@@ -51,7 +51,6 @@ CSS代码：<br/>
             margin: 0 200px 0 150px;<br/>
         }<br/>
 body里的代码：<br/>
-
 <div id="gmiddle"><br/>
     <div id="div-wrap"><span>div-middle</span></div><br/>
 </div><br/>
