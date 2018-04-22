@@ -3,7 +3,7 @@
 2018-04-19<br/>
     今天第一次收到面试邀请，有点小激动，也有点紧张加上对知识点的不熟悉，所以答的不好<br/><br/>
     面试官是一个很好的小哥哥，说话也好听，不懂的他还给我一一解释了<br/>
-##CSS<br/>
+## CSS<br/>
 #### 1.为啥要重置样式表<br/>
 --------
     为了重置浏览器的默认样式，统一定义以生成相同的显示效果。<br/>
@@ -69,6 +69,47 @@
 ### 关于css问的大概就这些，还有的想起来补上
 
 
+## JS<br/>
+#### 1.怎么让一个字符串顺序颠倒<br/>
+---
+    var str = '123';<br/>
+    var newStr = str.split("").reverse().join("");<br/>
+    alert(newStr);<br/>
+#### 2.数组的深拷贝<br/>
+---
+    没想起啥叫深拷贝，就回答了不知道，然后面试官给我我说了深拷贝的一种方法，用循环<br/>
+    for 循环实现数组的深拷贝<br/>
+    （1）for循环是非常好用的。如果不知道高级方法，通过for循环能够完成我们大多数的需求。<br/>
 
+    var arr = [1,2,3,4,5]<br/>
+    var arr2 = copyArr(arr)<br/><br/><br/><br/><br/><br/><br/><br/>
+    function copyArr(arr) {<br/><br/><br/><br/><br/><br/><br/>
+        let res = []<br/><br/><br/><br/><br/><br/>
+        for (let i = 0; i < arr.length; i++) {<br/><br/><br/><br/><br/>
+         res.push(arr[i])<br/><br/><br/><br/>
+        }<br/><br/><br/>
+        return res<br/><br/>
+    }<br/>
+    （2）slice 方法实现数组的深拷贝<br/>
+    这个代码实现非常简单。原理也比较好理解，他是将原数组中抽离部分出来形成一个新数组。<br/>
+    我们只要设置为抽离全部，即可完成数组的深拷贝。代码如下：<br/>
 
+    var arr = [1,2,3,4,5]<br/><br/>
+    var arr2 = arr.slice(0)<br/>
+    arr[2] = 5<br/>
+    console.log(arr)<br/>
+    console.log(arr2)<br/>
+    （3）这个代码也非常简单，原理更加粗暴。它是用于连接多个数组组成一个新的数组的方法。那么，<br/>
+    我们只要连接它自己，即可完成数组的深拷贝。代码如下：<br/>
 
+    var arr = [1,2,3,4,5]<br/>
+    var arr2 = arr.concat()<br/>
+    arr[2] = 5<br/>
+    console.log(arr)<br/>
+    console.log(arr2)<br/>
+    （4）ES6扩展运算符实现数组的深拷贝<br/>
+    var arr = [1,2,3,4,5]<br/>
+    var [ ...arr2 ] = arr<br/>
+    arr[2] = 5<br/>
+    console.log(arr)<br/>
+    console.log(arr2)<br/>
